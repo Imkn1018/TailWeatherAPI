@@ -12,7 +12,7 @@ export const SearchInput: VFC<Props> = ({
   onClickSearch,
 }) => {
   return (
-    <div className="flex mt-6 mb-5 mx-auto  w-3">
+    <div className="flex mt-10 mb-5 m-auto w-3">
       <input
         value={value}
         onChange={onChangeInputValue}
@@ -23,13 +23,14 @@ export const SearchInput: VFC<Props> = ({
       <span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6"
+          className="h-6 w-6 mx-5"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
           onClick={onClickSearch}
         >
           <path
+            className="p-4"
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={2}

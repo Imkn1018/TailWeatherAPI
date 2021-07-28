@@ -27,7 +27,7 @@ function App() {
     setCityName('');
   };
   return (
-    <div className="min-h-screen  justify-center items-center　inline-flex mx-auto">
+    <div className="min-h-screen  justify-center items-center　inline-flex m-auto">
       <div className="justify-center text-center items-center mx-auto">
         <SearchInput
           onChangeInputValue={onChangeInputValue}

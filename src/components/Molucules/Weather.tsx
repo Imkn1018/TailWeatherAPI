@@ -6,6 +6,11 @@ type Props = {
   datas: WEATHER;
 };
 export const Weather: VFC<Props> = ({ datas }) => {
+  let now = new Date();
+  let year = now.getFullYear();
+  let month = now.getMonth() + 1;
+  let day = now.getDate();
+
   return (
     <>
       <div className="p-4">
@@ -42,7 +47,7 @@ export const Weather: VFC<Props> = ({ datas }) => {
                 <div>
                   <p className="font-light text-xs">Date</p>
                   <p className="font-bold tracking-more-wider text-sm">
-                    2021-03-16
+                    {year}-{month}-{day}
                   </p>
                 </div>
                 <div>
