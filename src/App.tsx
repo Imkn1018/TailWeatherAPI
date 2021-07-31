@@ -5,6 +5,7 @@ import { Weather } from '../src/components/Molucules/Weather';
 import { SearchInput } from '../src/components/Molucules/SearchInput';
 import Data from './data.json';
 import { useWeatherData } from './Hooks/useWeatherData';
+import { Map } from './components/Organisms/Map';
 
 type WEATHER = typeof Data;
 
@@ -43,6 +44,7 @@ function App() {
       ) : (
         <div>nodata</div>
       )}
+      <Map />
     </div>
   );
 }
